@@ -1,0 +1,87 @@
+:root {
+  --primary: #1d1d1d;
+  --second: #5ef3d8;
+  --tercer: #f44654;
+}
+
+@font-face {
+  font-family: font-file-82132;
+  src: url("../fonts/CoolveticaRg-Regular.woff") format("wooff2"),
+    url("../fonts/CoolveticaRg-Regular.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--primary);
+}
+
+h1 {
+  font-family: font-file-82132;
+  color: #fff;
+  font-weight: 400;
+  line-height: 53px;
+  font-size: 30px;
+  letter-spacing: normal;
+  margin-left: 2rem;
+}
+
+.blast {
+  font-size: 54px;
+  display: inline-block;
+  margin: -3px;
+  transition: all 0.3s ease-out;
+}
+
+.blast:hover {
+  color: var(--second);
+  animation: rubberBand 1s;
+}
+
+.spaceLetter {
+  margin-left: 15px;
+}
+
+.firstLetter {
+  font-size: 70px;
+  color: var(--tercer);
+  text-shadow: 2px 2px var(--second);
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    -ms-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    -ms-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    -ms-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
