@@ -14,6 +14,38 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--primary);
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-option {
+  font-size: 22px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.presentation {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -5rem;
 }
 
 h1 {
@@ -21,13 +53,12 @@ h1 {
   color: #fff;
   font-weight: 400;
   line-height: 53px;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: normal;
-  margin-left: 2rem;
 }
 
 .blast {
-  font-size: 54px;
+  font-size: inherit;
   display: inline-block;
   margin: -3px;
   transition: all 0.3s ease-out;
@@ -35,7 +66,7 @@ h1 {
 
 .blast:hover {
   color: var(--second);
-  animation: rubberBand 1s;
+  animation: rubberBand 0.5s;
 }
 
 .spaceLetter {
@@ -84,4 +115,65 @@ h1 {
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+
+.profile {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: var(--second);
+  font-size: 32px;
+}
+
+/****************** section portfolio *************/
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+}
+
+.card {
+  width: 500px;
+}
+
+.card:first-child {
+  margin-right: 2rem;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-buttons {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+
+.card-buttons a {
+  background: transparent;
+  border: 2px solid var(--second);
+  color: var(--second);
+  border-radius: 23px;
+  padding: 0px 10px;
+}
+
+.card-buttons a:hover {
+  background: var(--second);
+  color: #fff;
+}
+
+h3 {
+  color: var(--tercer);
 }
