@@ -139,6 +139,31 @@ h3 {
   color: var(--tercer);
 }
 
+/****************** section skills ****************/
+.list-skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.icon-skill {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px 15px 10px;
+}
+
+.icon-skill:hover {
+  animation: skills 1.8s linear infinite;
+}
+
+@keyframes skills {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 /****************** section portfolio *************/
 .portfolio {
   color: #fff;
