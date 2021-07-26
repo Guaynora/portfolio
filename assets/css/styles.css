@@ -135,30 +135,37 @@ h2 {
   font-size: 32px;
 }
 
+h3 {
+  color: var(--tercer);
+}
+
 /****************** section portfolio *************/
 .portfolio {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   color: #fff;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 2rem;
 }
 
 .card {
-  width: 500px;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "image info" "image info";
 }
 
-.card:first-child {
-  margin-right: 2rem;
+.img-portfolio {
+  margin: auto;
+  grid-area: image;
 }
 
-.card-image {
-  position: relative;
-}
-
-.card-buttons {
-  position: absolute;
-  top: 50%;
-  left: 35%;
+.card-info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
 }
 
 .card-buttons a {
@@ -166,14 +173,18 @@ h2 {
   border: 2px solid var(--second);
   color: var(--second);
   border-radius: 23px;
-  padding: 0px 10px;
+  padding: 5px 10px;
+  margin-left: 10px;
 }
 
 .card-buttons a:hover {
-  background: var(--second);
+  background: var(--tercer);
+  border-color: var(--tercer);
   color: #fff;
 }
 
-h3 {
-  color: var(--tercer);
+@media screen and (max-width: 768px) {
+  .card {
+    grid-template-areas: "image image" "info info";
+  }
 }
