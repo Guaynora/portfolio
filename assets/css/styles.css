@@ -64,8 +64,16 @@ nav {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 20px;
+}
+
+li a {
+  transition: all 0.3s;
+}
+
+li:hover a {
+  border-bottom: 3px solid var(--tercer);
 }
 
 a {
@@ -218,6 +226,7 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "image info" "image info";
+  margin-bottom: 2rem;
 }
 
 .img-portfolio {
@@ -232,13 +241,17 @@ h3 {
   padding: 0 2rem;
 }
 
+.card-buttons {
+  margin-top: 20px;
+}
+
 .card-buttons a {
   background: transparent;
   border: 2px solid var(--second);
   color: var(--second);
   border-radius: 23px;
   padding: 5px 10px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .card-buttons a:hover {
@@ -252,6 +265,8 @@ h3 {
     grid-template-areas: "image image" "info info";
   }
 }
+
+/*********** section footer ************/
 
 .list-contact {
   display: flex;
