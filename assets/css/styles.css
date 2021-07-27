@@ -10,15 +10,54 @@
     url("../fonts/CoolveticaRg-Regular.woff") format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0;
   box-sizing: border-box;
   background-color: var(--primary);
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
+
+/************* background  *****************/
+.background {
+  height: 100vh;
+  position: absolute;
+  z-index: 99;
+}
+
+.span-background {
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-500%) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/*************** section presentation **********************/
 
 header {
   height: 100vh;
+  position: relative;
+  z-index: 999;
 }
 
 nav {
@@ -212,4 +251,18 @@ h3 {
   .card {
     grid-template-areas: "image image" "info info";
   }
+}
+
+.list-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.list-contact div {
+  margin: 15px;
+  color: #fff;
+}
+
+.icon-contact {
+  width: 50px;
 }
