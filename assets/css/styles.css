@@ -101,67 +101,14 @@ h1 {
   font-weight: 400;
   line-height: 53px;
   font-size: 40px;
-  letter-spacing: normal;
-}
-
-.blast {
-  font-size: inherit;
-  display: inline-block;
-  margin: -3px;
-  transition: all 0.3s ease-out;
-}
-
-.blast:hover {
-  color: var(--second);
-  animation: rubberBand 0.5s;
-}
-
-.spaceLetter {
-  margin-left: 15px;
+  letter-spacing: 2px;
 }
 
 .firstLetter {
   font-size: 70px;
   color: var(--tercer);
   text-shadow: 2px 2px var(--second);
-}
-
-@keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    -ms-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    -ms-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    -ms-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    -ms-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    -ms-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+  margin-right: -5px;
 }
 
 .profile {
