@@ -21,4 +21,4 @@ function createSquare() {
   }, 5000);
 }
 
-setInterval(createSquare, 150);
+//setInterval(createSquare, 150);

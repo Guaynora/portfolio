@@ -1,0 +1,48 @@
+/****************** Presentation ****************/
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+  }
+  .firstLetter {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .profile {
+    width: 14rem;
+    height: 14rem;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 40px;
+    margin: 0 auto;
+  }
+}
+
+/****************** Skills ****************/
+@media screen and (max-width: 768px) {
+  .icon-skill {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icon-skill {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/****************** Contact ****************/
+@media screen and (max-width: 380px) {
+  .list-contact div {
+    font-size: 18px;
+  }
+  .icon-contact {
+    width: 30px;
+  }
+}
