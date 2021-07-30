@@ -12,43 +12,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   box-sizing: border-box;
   background-color: var(--primary);
   font-family: "Open Sans", sans-serif;
-}
-
-/************* background  *****************/
-.background {
-  height: inherit;
-  position: absolute;
-  z-index: 99;
-}
-
-.span-background {
-  position: absolute;
-  pointer-events: none;
-  background: #fff;
-  animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: scale(0) translateY(0) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1) translateY(-500%) rotate(360deg);
-    opacity: 0;
-  }
 }
 
 /*************** Menu **********************/
