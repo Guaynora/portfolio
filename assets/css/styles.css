@@ -18,7 +18,6 @@ body {
   box-sizing: border-box;
   background-color: var(--primary);
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 /************* background  *****************/
@@ -52,31 +51,42 @@ body {
   }
 }
 
-/*************** section presentation **********************/
-
+/*************** Menu **********************/
 header {
-  height: 100vh;
-  position: relative;
-  z-index: 999;
+  background: var(--primary);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
 }
 
-nav {
-  position: fixed;
-  background: var(--primary);
+.logo a {
+  color: var(--tercer);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.menu {
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: center;
   padding: 20px;
-  width: 100%;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-li a {
+.menu a {
   border-bottom: 3px solid transparent;
   transition: all 0.3s;
 }
 
-li:hover a {
+a:hover {
   border-bottom: 3px solid var(--tercer);
 }
 
@@ -90,9 +100,51 @@ a {
   color: #fff;
 }
 
+.menu-btn {
+  outline: thin solid var(--second);
+  border: 0;
+  background-color: var(--primary);
+  display: none;
+}
+
+.menu-btn svg {
+  fill: var(--second);
+}
+
+.none {
+  display: none;
+}
+
+.menu.is-active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    opacity: 0;
+    flex-direction: column;
+    text-align: center;
+    top: 4rem;
+    width: 100%;
+    background: var(--primary);
+  }
+
+  .menu-btn {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  a:hover {
+    background: var(--tercer);
+  }
+}
+
+/*************** section presentation **********************/
+
 .presentation {
-  padding-top: 5vh;
-  height: 100%;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);

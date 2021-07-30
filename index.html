@@ -13,27 +13,40 @@
 
 <body>
     <header>
-        <nav>
-            <li><a class="menu-option" href="#skills">Habilidades</a></li>
-            <li><a class="menu-option" href="#portfolio">Proyectos</a></li>
-            <li><a class="menu-option" href="#contact">Contacto</a></li>
+        <div class="logo">
+            <a href="index.html"><span>G</span>uaynora</a>
+        </div>
+        <nav class="menu">
+            <a class="menu-option" href="#home">Inicio</a>
+            <a class="menu-option" href="#skills">Habilidades</a>
+            <a class="menu-option" href="#portfolio">Proyectos</a>
+            <a class="menu-option" href="#contact">Contacto</a>
         </nav>
-        <section class="presentation">
-            <h1>
-                Hola,
-                <br>
-                soy
-                <span class="firstLetter">J</span>onathan
-                <span class="firstLetter">G</span>uaynora,
-                <br>
-                <span class="firstLetter">F</span>rontend
-                <span class="firstLetter">D</span>eveloper
-            </h1>
-            <div class="profile">
-                <img src="./assets/img/20180729_083652.jpg" alt="Jonathan Guaynora">
-            </div>
-        </section>
+        <button class="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+            </svg>
+            <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+            </svg>
+        </button>
     </header>
+    <section id="home" class="presentation">
+        <h1>
+            Hola,
+            <br>
+            soy
+            <span class="firstLetter">J</span>onathan
+            <span class="firstLetter">G</span>uaynora,
+            <br>
+            <span class="firstLetter">F</span>rontend
+            <span class="firstLetter">D</span>eveloper
+        </h1>
+        <div class="profile">
+            <img src="./assets/img/20180729_083652.jpg" alt="Jonathan Guaynora">
+        </div>
+    </section>
     <section class="skills" id="skills">
         <h2>Habilidades</h2>
         <div class="list-skill">
