@@ -144,8 +144,8 @@ h1 {
 
 .profile {
   border-radius: 50%;
-  width: 20rem;
-  height: 20rem;
+  width: 40rem;
+  height: 40rem;
   overflow: hidden;
   margin: auto;
   grid-area: img;
